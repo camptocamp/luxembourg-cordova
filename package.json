@@ -1,0 +1,27 @@
+{
+    "name": "luxembourg-cordova",
+    "displayName": "Luxembourg Cordova",
+    "version": "0.0.1",
+    "description": "Cordova wrapper around the Luxembourg website.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "BSD-2",
+    "dependencies": {
+        "cordova-android": "^7.0.0",
+        "cordova-plugin-whitelist": "^1.3.3",
+        "cordova-sqlite-storage": "git+https://github.com/litehelpers/Cordova-sqlite-storage.git",
+        "localforage": "^1.7.2",
+        "localforage-cordovasqlitedriver": "^1.7.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-sqlite-storage": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}
