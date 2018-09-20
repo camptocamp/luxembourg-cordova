@@ -14,7 +14,10 @@ instead (higher memory limit, no automatic reclaiming of space)...
   - https://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html
 ...
 - In Android studio you need to create an emulator (NexusS 22 is known to work)
+- CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL="https://services.gradle.org/distributions/gradle-4.4-all.zip" ANDROID_HOME=/home/${USER}/Android/Sdk `npm bin --global`/cordova platform add android
 - Run `make run-android`
+- In case of error, open in Android studio and adjust the "project properties" so that the sdk is specified; deploy to emulator or device using Android studio
 
+An APK is available in the gh-pages branch, see https://camptocamp.github.io/luxembourg-cordova/v2018_09_20.apk
 
 ## iOS
