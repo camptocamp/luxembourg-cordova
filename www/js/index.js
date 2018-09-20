@@ -86,7 +86,10 @@ function postError(error, context) {
   iframe.postMessage({
     id: context.id,
     command: 'error',
-    error: error,
+    args: {
+      msg: error.msg,
+      stacks: error.args.map(function(e) { return e.stack; })
+    },
     context: context
   }, '*');
 }
