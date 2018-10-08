@@ -2,9 +2,11 @@ var iframe = frames[0];
 
 var websiteOrigin = 'http://10.0.2.2:5000';
 websiteOrigin = 'https://offline-demo.geoportail.lu'; // offline demo
+websiteOrigin = 'https://dev.camptocamp.com'; ///files/gberaudo/stub.html'; // offline demo stub
 // FIXME: need to find a way to have 1 app for local dev, 1 for demo, 1 for prod.
 
-document.getElementById('website').src = websiteOrigin + '?cordova&debug';
+//document.getElementById('website').src = websiteOrigin + '?cordova&debug';
+document.getElementById('website').src = websiteOrigin + '/files/gberaudo/stub.html?cordova&debug';
 
 window.addEventListener('message', receiveMessage, false);
 
