@@ -44,5 +44,5 @@ An APK is available in the gh-pages branch, see https://camptocamp.github.io/lux
   - iframe <> cordova communication was OK
 - on device (old iPad on iOS 9):
   - start without internet was OK with geoadmin inside the iframe;
-  - iframe <> cordova communication could not be tested (browser too old: don't understand unminified const/let)
-- Upcoming webview changes: https://cordova.apache.org/news/2018/08/01/future-cordova-ios-webview.html
+  - iframe <> cordova communication was tested with a stub (browser too old: don't understand unminified const/let): stored 1GB of data, and read it back
+- Mind the upcoming webview changes: https://cordova.apache.org/news/2018/08/01/future-cordova-ios-webview.html
