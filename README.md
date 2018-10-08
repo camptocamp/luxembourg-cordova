@@ -21,3 +21,28 @@ instead (higher memory limit, no automatic reclaiming of space)...
 An APK is available in the gh-pages branch, see https://camptocamp.github.io/luxembourg-cordova/v2018_09_20.apk
 
 ## iOS
+- See https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html
+- Run `make run-ios`
+- Run `make xcode-open` and click the triangle
+- On Apple only the authorized devices can install the app.
+
+
+# POC state
+
+## General
+- issue with running the minified build of the website (unknown reason);
+
+## Android
+- on simulator: all OK
+- on device:
+  - start without internet was OK with geoadmin inside the iframe;
+  - iframe <> cordova communication was OK
+
+## iOS (default webview)
+- on simulator:
+  - start without internet was OK with geoadmin inside the iframe;
+  - iframe <> cordova communication was OK
+- on device (old iPad on iOS 9):
+  - start without internet was OK with geoadmin inside the iframe;
+  - iframe <> cordova communication could not be tested (browser too old: don't understand unminified const/let)
+- Upcoming webview changes: https://cordova.apache.org/news/2018/08/01/future-cordova-ios-webview.html
